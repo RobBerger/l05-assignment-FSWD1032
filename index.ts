@@ -29,12 +29,23 @@ class Manager extends Employee {
         this.teamSize = manTeamSize;
         this.managerBonus = manBonus;
     }
+
+    printDetails(): string {
+        let result = super.printDetails();
+        return result + `${this.name} manages ${this.teamSize} employees.`;
+    }
 }
 
 let jimbo: Employee = new Employee('Jimbo', 'Lifeguard', 'Aquatics', 30000);
+let tammy: Manager = new Manager('Tammy', 'Aquatics Director', 'Aquatics', 50000, 7, 2000);
 
 function printEmployee(callEmp: Employee) {
     console.log(callEmp.printDetails());
 }
 
+function printManager(callMan: Manager) {
+    console.log(callMan.printDetails());
+}
+
 printEmployee(jimbo);
+printManager(tammy);
