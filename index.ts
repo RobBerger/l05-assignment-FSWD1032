@@ -31,8 +31,7 @@ class Manager extends Employee {
     }
 
     printDetails(): string {
-        let result = super.printDetails();
-        return result + `${this.name} manages ${this.teamSize} employees.`;
+        return `${this.name} is a ${this.title} in the ${this.department} department with a salary of ${this.printDetails}. ${this.name} manages ${this.teamSize} employees.`;
     }
 }
 
