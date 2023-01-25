@@ -21,3 +21,9 @@ class Employee {
 }
 
 let jimbo: Employee = new Employee('Jimbo', 'Lifeguard', 'Aquatics', 30000);
+
+function printEmployee(callEmp: Employee) {
+    console.log(callEmp.printDetails());
+}
+
+printEmployee(jimbo);

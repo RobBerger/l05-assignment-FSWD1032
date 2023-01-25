@@ -10,7 +10,7 @@ class Employee {
         return `$${this.salary}`;
     }
     printDetails() {
-        console.log(`${this.name} is a ${this.title} in the ${this.department} with a salary of ${this.printDetails}.`);
+        return `${this.name} is a ${this.title} in the ${this.department} with a salary of ${this.printDetails}.`;
     }
 }
 let jimbo = new Employee('Jimbo', 'Lifeguard', 'Aquatics', 30000);
