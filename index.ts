@@ -19,3 +19,5 @@ class Employee {
         console.log(`${this.name} is a ${this.title} in the ${this.department} with a salary of ${this.printDetails}.`);
     }
 }
+
+let jimbo: Employee = new Employee('Jimbo', 'Lifeguard', 'Aquatics', 30000);
