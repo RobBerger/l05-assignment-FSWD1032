@@ -16,7 +16,7 @@ class Employee {
     }
 
     printDetails(): string {
-        return `${this.name} is a ${this.title} in the ${this.department} with a salary of ${this.printDetails}.`;
+        return `${this.name} is a ${this.title} in the ${this.department} department with a salary of ${this.printDetails}.`;
     }
 }
 
