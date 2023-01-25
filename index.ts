@@ -20,6 +20,17 @@ class Employee {
     }
 }
 
+class Manager extends Employee {
+    teamSize: number;
+    private readonly managerBonus: number = 1500;
+
+    constructor(empName: string, empTitle: string, empDepartment: string, empSalary: number, manTeamSize: number, manBonus: number) {
+        super(empName, empTitle, empDepartment, empSalary);
+        this.teamSize = manTeamSize;
+        this.managerBonus = manBonus;
+    }
+}
+
 let jimbo: Employee = new Employee('Jimbo', 'Lifeguard', 'Aquatics', 30000);
 
 function printEmployee(callEmp: Employee) {
